@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include('../partials/head.ejs') %>
+
+    <body>
+        <div class="nescss">
+            <%-include('../partials/nav.ejs') %>
+                <div class="container">
+                    <div class="create-blog-content">
+                        <form action="/login" method="POST">
+                            <label for="user_id">ID</label>
+                            <input type="text" name="name" required>
+                            <label for="user_pwd">password:</label>
+                            <input type="password" name="password" required>
+                            <button>login</button>
+                        </form>
+                    </div>
+
+                </div>
+
+
+        </div>
+
+        <%-include('../partials/footer.ejs') %>
+
+    </body>
+
+</html>

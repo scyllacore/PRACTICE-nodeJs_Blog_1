@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('../partials/head.ejs') %>
+
+	<body>
+		<div class="nescss">
+			<%-include('../partials/nav.ejs') %>
+
+				<div class="container">
+					<main class="main-contents">
+						<div>
+						<% if(bloglist.length>0) { %>
+							<% bloglist.forEach(blog => {%>
+							
+								<a class="single" href="/blogs/<%=blog._id %>">
+								<h3 class="nes-container with-title is-centered"><%= blog.title %></h3>
+							</a> 
+								<% }) %>
+								<% } else { %>
+						   <p>보여줄게 없습니당..</p>  
+						   <% }%>  
+						</div>
+					</main>
+
+				</div>
+
+
+		</div>
+
+		<%-include('../partials/footer.ejs') %>
+
+	</body>
+
+</html>

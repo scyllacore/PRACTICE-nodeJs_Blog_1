@@ -1,0 +1,125 @@
+@import url("nes.css"); // 오류 1. 경로 설정 잘못 함
+
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("DungGeunMo.woff") format("truetype");
+}
+
+html,
+body,
+pre,
+code,
+kbd,
+samp {
+  font-family: "DungGeunMo"; //Consolas
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  border-bottom: 4px solid #d3d3d3;
+  background-color: white;
+
+  > .container {
+    display: flex;
+    align-items: baseline;
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    transition: all 0.2s ease;
+
+    > .nav-brand {
+      margin-right: auto;
+
+      > a {
+        color: rgb(16, 72, 105);
+      }
+    }
+
+    > .category {
+      margin-top: auto;
+      margin-right: 60px;
+      a {
+        padding: 15px;
+        color: rgb(75, 82, 102);
+      }
+    }
+
+    > .social-button {
+      margin-left: auto;
+    }
+  }
+}
+
+body {
+  padding: 0 2rem;
+  margin: 0 2rem;
+}
+
+.nescss {
+  > .container {
+    div {
+      margin-bottom: 1.5rem !important;
+      max-width: 980px;
+      margin: 0 auto;
+      margin-top: 150px;
+    }
+
+    .create-blog-content {
+    
+      form {
+        max-width: 400px;
+        margin: 0 85px;
+      }
+
+      input{
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+
+      }
+      textarea {
+        display: block;
+        width: 200%;
+        height: 25rem;
+        margin: 10px 0;
+        padding: 15px 20px;
+
+      }
+
+
+
+      label {
+        display: block;
+        margin-top: 24px;
+      }
+
+      button {
+        margin-top: 20px;
+        background: rgb(240, 86, 116);
+        color: white;
+        padding: 6px;
+        border: 0;
+        font-size: 1.2em;
+        cursor: pointer;
+      }
+    }
+
+    .delete-btn{
+      margin-top: auto;
+    }
+
+  }
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+/*"sourceMappingURL=styles.css.map" 두번써서 오류난 것 같다. nes.css 젤 아래에도 한 번 더 언급되어있었는데 지움*/

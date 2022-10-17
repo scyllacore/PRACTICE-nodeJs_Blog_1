@@ -1,0 +1,69 @@
+javaScript syntax
+◎ let,var 차이점 : https://www.howdy-mj.me/javascript/var-let-const/
+◎ return을 쓰는 이유 : https://stackoverflow.com/questions/43055600/app-get-is-there-any-difference-between-res-send-vs-return-res-send
+◎ 비동기 처리 방법 3가지(블로그 글 다 봐볼 것) : https://www.daleseo.com/js-async-async-await/
+◎ 동기와 비동기, 그리고 블럭과 넌블럭 : https://musma.github.io/2019/04/17/blocking-and-synchronous.html
+◎ 함수의 종류와 특징 : https://velog.io/@wpark/Javascript-함수의-종류와-특징
+ - then((response)=>{return response.json() }) // .then(response => response.json()) : 중괄호를 안쓰면 알아서 return을 한다. 쓰면 return 따로 써줘야 됨
+
+javaScript pakage
+◎ npm 
+ - https://www.npmjs.com/package/qs
+◎ express
+ - next 함수 이해 : https://velog.io/@khw970421/express-next-%ED%95%A8%EC%88%98
+ - middleware 기본 개념 : https://expressjs.com/ko/guide/using-middleware.html
+◎ bodyPhaser 
+ - 기본 개념 : https://velog.io/@yejinh/express-미들웨어-bodyParser-모듈
+
+NodeJS 강의
+◎ ninja net : https://www.youtube.com/playlist?list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU
+
+server(heruko) & DataBase(mongoDB)
+◎ heruko에서 mongoDB 사용 방법 : https://www.mongodb.com/developer/how-to/use-atlas-on-heroku/
+◎ 로그인 구현 및 토큰 생성 방법 : https://kth990303.tistory.com/81
+◎ local auth 방법 : https://darrengwon.tistory.com/195
+◎ 회원가입 구현 방법 : https://donggoolosori.github.io/2020/12/14/register/
+◎ HTTP 상태코드 정리 : https://www.whatap.io/ko/blog/40/
+◎ JWT Token 사용법 : https://velog.io/@neity16/NodeJS-JWT-Token-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+
+◎ 설정 방법
+- heruko & mongoDB 연동 : https://www.mongodb.com/developer/how-to/use-atlas-on-heroku/
+- heruko & git 연동 : https://m.blog.naver.com/tkddlf4209/221833759786
+- heruko & nodeJS &MongoDB 연동 : https://poiemaweb.com/nodejs-heroku
+
+git
+◎ vscode & git 연동 : https://earth-95.tistory.com/87 , https://0ver-grow.tistory.com/888
+◎ 메인 브런치 설정법 : https://blog.outsider.ne.kr/1503 (git branch -M main)
+◎ node_modules 생략 방법 : https://velog.io/@heony/gitignore
+
+prompt 명령어 정리
+◎npm
+1.npm init
+2.npm install
+3. script에 “start” : “node app.js” 추가
+
+◎git
+1. git init
+2. git config --global user.name scyllacore
+3. git config --global user.email yms8795@gmail.com
+4. git remote add origin https://github.com/scyllacore/blog.git
+5. git pull origin main --allow-unrelated-histories
+6. git branch -M main
+7. git push -u origin main → git push
+
+◎heroku
+1. npm install -g heroku (헤로쿠 설치)
+2. heroku login 
+3. heroku create scyllacore-blog (홈페이지에서 만들기 가능)
+4. heroku git:remote -a scyllacore-blog
+5. heroku logs --tail
+
+
+html & css 
+◎template
+-https://codeburst.io/10-amazing-and-retro-css-kits-24612169f550
+-retro win theme html
+◎tip
+- 상대 경로 잡는 법 : https://stackoverflow.com/questions/5559578/having-links-relative-to-root/5559597
+- css map 설정 : https://www.inflearn.com/questions/276043
+
